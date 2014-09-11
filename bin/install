@@ -10,7 +10,6 @@ echo "$OPENSHIFT_PHP_DIR/configuration/etc/php.ini" > "$OPENSHIFT_PHP_DIR/env/PH
 
 ln -s /usr/lib64/httpd/modules $OPENSHIFT_PHP_DIR/modules
 ln -s /etc/httpd/conf/magic $OPENSHIFT_PHP_DIR/conf/magic
-touch $OPENSHIFT_HOMEDIR/test.log
 # Pear setup
 rm -f $OPENSHIFT_HOMEDIR/.pearrc
 pear config-create "$OPENSHIFT_PHP_DIR"/phplib/pear/ "$OPENSHIFT_HOMEDIR"/.pearrc
